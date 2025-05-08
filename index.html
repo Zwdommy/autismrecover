@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="page.title">AutismRecover - Lighting Up Stars with AI and AR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <header class="animate__animated animate__fadeIn">
+        <nav>
+            <div class="logo" data-lang="nav.logo">✨ AutismRecover</div>
+            <ul>
+                <li><a href="#about" data-lang="nav.about">About</a></li>
+                <li><a href="#demo" data-lang="nav.demo">Demo</a></li>
+                <li><a href="#music" data-lang="nav.music">AI Music</a></li>
+                <li><a href="#report" data-lang="nav.report">Report</a></li>
+                <li>
+                    <button class="lang-switch" onclick="toggleLanguage()">
+                        <span class="lang-text" data-lang="lang.switch">中文</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="animate__animated animate__fadeIn">
+            <h1 data-lang="hero.title">Lighting Up Stars with AI and AR</h1>
+            <p data-lang="hero.subtitle">Creating Personalized Recovery Experience for Children with Autism</p>
+            <div class="cta-buttons">
+                <a href="#demo" class="btn primary" data-lang="hero.watch">Watch Demo</a>
+                <a href="#about" class="btn secondary" data-lang="hero.learn">Learn More</a>
+            </div>
+        </section>
+
+        <section id="about" class="animate__animated animate__fadeIn">
+            <h2 data-lang="about.title">About the Project</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 data-lang="about.feature1.title">Drawing to 3D</h3>
+                    <p data-lang="about.feature1.desc">Transform children's drawings into 3D characters for interactive experiences</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3 data-lang="about.feature2.title">AI Assistance</h3>
+                    <p data-lang="about.feature2.desc">Utilize generative AI technology to provide personalized recovery plans</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3 data-lang="about.feature3.title">Music Therapy</h3>
+                    <p data-lang="about.feature3.desc">AI-generated music to enhance social skills</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="animate__animated animate__fadeIn">
+            <h2 data-lang="demo.title">Project Demo</h2>
+            <div class="video-container">
+                <video controls poster="video-poster.jpg">
+                    <source src="704552862aee3117d3e30959970acbfd.mp4" type="video/mp4">
+                    <span data-lang="demo.videoError">Your browser does not support video playback.</span>
+                </video>
+            </div>
+        </section>
+
+        <section id="music" class="animate__animated animate__fadeIn">
+            <h2 data-lang="music.title">AI-Generated Music</h2>
+            <div class="music-player">
+                <audio controls preload="auto">
+                    <source src="_In Our Song_.mp3" type="audio/mpeg">
+                    <source src="_In Our Song_(1).mp3" type="audio/mpeg">
+                    <span data-lang="music.audioError">Your browser does not support audio playback.</span>
+                </audio>
+                <div class="music-info">
+                    <p data-lang="music.info">"In Our Song" - AI-Generated Healing Music</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="report" class="animate__animated animate__fadeIn">
+            <h2 data-lang="report.title">Project Report</h2>
+            <div class="report-container">
+                <a href="AutismRecover Project Report.pdf" class="btn primary" target="_blank" data-lang="report.view">View Full Report</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang="footer.copyright">© 2024 AutismRecover Project. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
