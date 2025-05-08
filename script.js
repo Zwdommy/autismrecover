@@ -350,4 +350,28 @@ window.addEventListener('load', () => {
         currentLang = savedLang;
     }
     updateLanguage(); // 确保在页面加载时立即应用语言设置
+});
+
+// 音频播放器错误处理
+document.addEventListener('DOMContentLoaded', function() {
+    const audioPlayer = document.getElementById('musicPlayer');
+    const audioError = document.getElementById('audioError');
+    
+    if (audioPlayer) {
+        // 监听错误事件
+        audioPlayer.addEventListener('error', function(e) {
+            console.error('Audio error:', e);
+            audioError.style.display = 'block';
+            audioError.textContent = '音频加载失败，请检查网络连接或刷新页面重试。';
+        });
+
+        // 监听加载事件
+        audioPlayer.addEventListener('loadeddata', function() {
+            console.log('Audio loaded successfully');
+            audioError.style.display = 'none';
+        });
+
+        // 尝试预加载音频
+        audioPlayer.load();
+    }
 }); 
